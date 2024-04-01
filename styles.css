@@ -1,0 +1,108 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+
+/* common */
+a {
+  text-decoration: none;
+}
+.btn {
+  height: 80px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: yellow;
+  padding: 10px 30px;
+  margin: 20px;
+  font-size: 16px;
+  border-radius: 30px;
+}
+.btn:hover {
+  opacity: 0.8;
+  color: pink;
+}
+@keyframes upDown {
+  0% {
+    rotate: 0;
+  }
+  50% {
+    rotate: 360deg;
+  }
+  100% {
+    rotate: 0;
+  }
+}
+.date,
+.name {
+  text-align: center;
+  color: rgb(39, 206, 17);
+}
+.hoi {
+  width: 80%;
+  margin: 100px auto;
+}
+.deo {
+  padding: 20px;
+}
+.avatar {
+  width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  translate: -50%;
+  animation: upDown linear 10s 2;
+}
+.deo:hover {
+  translate: 200px 200px;
+  opacity: 0.5;
+  background-color: red;
+}
+.deo,
+.ok,
+.nghi {
+  text-align: center;
+  color: rgb(255, 47, 147);
+  padding: 30px;
+  margin: 20px 30px;
+  box-shadow: 1px 2px 3px rgb(79, 242, 4);
+}
+.link {
+  width: 50%;
+  border-radius: 5px;
+  margin: 10px auto;
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgb(223, 230, 13);
+  background: rgb(9, 121, 14);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 121, 14, 1) 33%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.return {
+  margin-top: 50px;
+  font-size: 2rem;
+  text-align: center;
+}
+.return a {
+  padding: 20px 30px;
+  background-color: green;
+  color: rgb(255, 140, 0);
+  border-radius: 22px;
+}
